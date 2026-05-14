@@ -1,0 +1,276 @@
+/* ═══════════════════════════════════════════════════════════════
+   PRELOADER
+═══════════════════════════════════════════════════════════════ */
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--green-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+.preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.preloader-content { text-align: center; }
+
+.preloader-dragon {
+  font-size: 72px;
+  color: var(--gold);
+  animation: dragonPulse 1.5s ease-in-out infinite;
+  display: block;
+  margin-bottom: 32px;
+}
+@keyframes dragonPulse {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: .6; transform: scale(.92); }
+}
+
+.preloader-bar {
+  width: 180px;
+  height: 2px;
+  background: rgba(201,169,97,.2);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-inline: auto;
+}
+.preloader-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #c9a961, #e8d4a0);
+  border-radius: 2px;
+  animation: barFill 1.6s ease-out forwards;
+}
+@keyframes barFill {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SCROLL REVEAL
+═══════════════════════════════════════════════════════════════ */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity .75s cubic-bezier(.4,0,.2,1), transform .75s cubic-bezier(.4,0,.2,1);
+}
+.reveal-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay for grid children */
+.grid .reveal-item:nth-child(1)  { transition-delay: 0ms;   }
+.grid .reveal-item:nth-child(2)  { transition-delay: 80ms;  }
+.grid .reveal-item:nth-child(3)  { transition-delay: 160ms; }
+.grid .reveal-item:nth-child(4)  { transition-delay: 240ms; }
+.grid .reveal-item:nth-child(5)  { transition-delay: 320ms; }
+.grid .reveal-item:nth-child(6)  { transition-delay: 400ms; }
+.grid .reveal-item:nth-child(7)  { transition-delay: 480ms; }
+.grid .reveal-item:nth-child(8)  { transition-delay: 560ms; }
+
+.whieda-grid .reveal-item:nth-child(1) { transition-delay: 0ms;   }
+.whieda-grid .reveal-item:nth-child(2) { transition-delay: 100ms; }
+.whieda-grid .reveal-item:nth-child(3) { transition-delay: 200ms; }
+.whieda-grid .reveal-item:nth-child(4) { transition-delay: 300ms; }
+.whieda-grid .reveal-item:nth-child(5) { transition-delay: 400ms; }
+
+.products-grid .reveal-item:nth-child(1)  { transition-delay: 0ms;   }
+.products-grid .reveal-item:nth-child(2)  { transition-delay: 60ms;  }
+.products-grid .reveal-item:nth-child(3)  { transition-delay: 120ms; }
+.products-grid .reveal-item:nth-child(4)  { transition-delay: 180ms; }
+.products-grid .reveal-item:nth-child(5)  { transition-delay: 240ms; }
+.products-grid .reveal-item:nth-child(6)  { transition-delay: 300ms; }
+.products-grid .reveal-item:nth-child(7)  { transition-delay: 360ms; }
+.products-grid .reveal-item:nth-child(8)  { transition-delay: 420ms; }
+.products-grid .reveal-item:nth-child(9)  { transition-delay: 480ms; }
+.products-grid .reveal-item:nth-child(10) { transition-delay: 540ms; }
+.products-grid .reveal-item:nth-child(11) { transition-delay: 600ms; }
+.products-grid .reveal-item:nth-child(12) { transition-delay: 660ms; }
+
+.audience-grid .reveal-item:nth-child(1) { transition-delay: 0ms;   }
+.audience-grid .reveal-item:nth-child(2) { transition-delay: 60ms;  }
+.audience-grid .reveal-item:nth-child(3) { transition-delay: 120ms; }
+.audience-grid .reveal-item:nth-child(4) { transition-delay: 180ms; }
+.audience-grid .reveal-item:nth-child(5) { transition-delay: 240ms; }
+.audience-grid .reveal-item:nth-child(6) { transition-delay: 300ms; }
+.audience-grid .reveal-item:nth-child(7) { transition-delay: 360ms; }
+.audience-grid .reveal-item:nth-child(8) { transition-delay: 420ms; }
+
+.formats-grid .reveal-item:nth-child(1) { transition-delay: 0ms;   }
+.formats-grid .reveal-item:nth-child(2) { transition-delay: 80ms;  }
+.formats-grid .reveal-item:nth-child(3) { transition-delay: 160ms; }
+.formats-grid .reveal-item:nth-child(4) { transition-delay: 240ms; }
+.formats-grid .reveal-item:nth-child(5) { transition-delay: 320ms; }
+
+.partnership-list .reveal-item:nth-child(1) { transition-delay: 0ms;   }
+.partnership-list .reveal-item:nth-child(2) { transition-delay: 80ms;  }
+.partnership-list .reveal-item:nth-child(3) { transition-delay: 160ms; }
+.partnership-list .reveal-item:nth-child(4) { transition-delay: 240ms; }
+.partnership-list .reveal-item:nth-child(5) { transition-delay: 320ms; }
+.partnership-list .reveal-item:nth-child(6) { transition-delay: 400ms; }
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO ENTRANCE ANIMATIONS
+═══════════════════════════════════════════════════════════════ */
+.hero-content .reveal-item:nth-child(1) { transition-delay: 200ms; }
+.hero-content .reveal-item:nth-child(2) { transition-delay: 350ms; }
+.hero-content .reveal-item:nth-child(3) { transition-delay: 500ms; }
+.hero-content .reveal-item:nth-child(4) { transition-delay: 650ms; }
+.hero-content .reveal-item:nth-child(5) { transition-delay: 800ms; }
+
+.hero-photo.reveal-item { transition-delay: 400ms; }
+
+/* ═══════════════════════════════════════════════════════════════
+   SECTION HEADER ANIMATION
+═══════════════════════════════════════════════════════════════ */
+.section-header .section-eyebrow { transition-delay: 0ms; }
+.section-header .section-title   { transition-delay: 120ms; }
+
+/* ═══════════════════════════════════════════════════════════════
+   CTA ITEMS
+═══════════════════════════════════════════════════════════════ */
+.cta-inner .reveal-item:nth-child(1) { transition-delay: 0ms;   }
+.cta-inner .reveal-item:nth-child(2) { transition-delay: 150ms; }
+.cta-inner .reveal-item:nth-child(3) { transition-delay: 300ms; }
+
+/* ═══════════════════════════════════════════════════════════════
+   GOLD GLOW PULSE (on primary buttons)
+═══════════════════════════════════════════════════════════════ */
+@keyframes goldGlow {
+  0%,100% { box-shadow: 0 4px 20px rgba(201,169,97,.35); }
+  50%      { box-shadow: 0 8px 36px rgba(201,169,97,.6); }
+}
+
+.btn-gold { animation: goldGlow 3s ease-in-out infinite; }
+.btn-gold:hover { animation: none; }
+
+/* ═══════════════════════════════════════════════════════════════
+   WHIEDA CARD HOVER SHIMMER
+═══════════════════════════════════════════════════════════════ */
+.whieda-card {
+  position: relative;
+  overflow: hidden;
+}
+.whieda-card::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -60%;
+  width: 40%; height: 200%;
+  background: linear-gradient(105deg, transparent, rgba(255,255,255,.07), transparent);
+  transform: skewX(-10deg);
+  transition: left .6s ease;
+}
+.whieda-card:hover::before { left: 120%; }
+
+/* ═══════════════════════════════════════════════════════════════
+   GLASS CARD SHIMMER
+═══════════════════════════════════════════════════════════════ */
+.glass-card {
+  position: relative;
+  overflow: hidden;
+}
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -80%;
+  width: 50%; height: 100%;
+  background: linear-gradient(105deg, transparent, rgba(255,255,255,.15), transparent);
+  transform: skewX(-15deg);
+  transition: left .6s ease;
+}
+.glass-card:hover::before { left: 130%; }
+
+/* ═══════════════════════════════════════════════════════════════
+   FORMAT CARD ACCENT LINE
+═══════════════════════════════════════════════════════════════ */
+.format-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 3px;
+  background: linear-gradient(90deg, #c9a961, #e8d4a0);
+  border-radius: 2px 2px 0 0;
+  transition: width .35s var(--transition);
+}
+.format-card:hover::after { width: 80%; }
+
+/* ═══════════════════════════════════════════════════════════════
+   PRODUCT IMAGE OVERLAY
+═══════════════════════════════════════════════════════════════ */
+.product-card { overflow: hidden; }
+.product-image { overflow: hidden; }
+
+/* ═══════════════════════════════════════════════════════════════
+   AUDIENCE CARD ICON ROTATION ON HOVER
+═══════════════════════════════════════════════════════════════ */
+.audience-card:hover .audience-icon-circle span {
+  animation: iconBounce .4s ease;
+}
+@keyframes iconBounce {
+  0%,100% { transform: scale(1); }
+  50%      { transform: scale(1.3) rotate(-5deg); }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SCROLL REVEAL: SECTION HEADERS
+═══════════════════════════════════════════════════════════════ */
+.section-header {
+  overflow: hidden;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MOBILE OVERLAY LINK ANIMATION
+═══════════════════════════════════════════════════════════════ */
+.mobile-overlay .mobile-nav-link {
+  position: relative;
+  overflow: hidden;
+}
+.mobile-overlay .mobile-nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%; bottom: 0;
+  width: 0; height: 1px;
+  background: var(--gold);
+  transform: translateX(-50%);
+  transition: width .3s ease;
+}
+.mobile-overlay .mobile-nav-link:hover::after { width: 60%; }
+
+/* ═══════════════════════════════════════════════════════════════
+   REVIEW CARD ENTRANCE (slider)
+═══════════════════════════════════════════════════════════════ */
+.review-card {
+  animation: fadeInCard .5s ease both;
+}
+@keyframes fadeInCard {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FLOATING DECORATIVE ELEMENTS
+═══════════════════════════════════════════════════════════════ */
+@keyframes float {
+  0%,100% { transform: translateY(0px) rotate(0deg); }
+  33%      { transform: translateY(-10px) rotate(1deg); }
+  66%      { transform: translateY(-5px) rotate(-1deg); }
+}
+
+.hero-dragon { animation: float 8s ease-in-out infinite; }
+
+/* ═══════════════════════════════════════════════════════════════
+   PREFERS REDUCED MOTION
+═══════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+  .reveal-item { opacity: 1; transform: none; }
+}

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Вишневское Здоровье — персональный wellness-бренд. Натуральное оздоровление, продукция WHIEDA, консультации и партнёрство.">
+  <meta name="keywords" content="wellness, здоровье, WHIEDA, оздоровление, долголетие, партнёрство">
+  <meta property="og:title" content="Вишневское Здоровье — Wellness &amp; Долголетие">
+  <meta property="og:description" content="Персональный wellness-бренд. Натуральное оздоровление и возможности для новой жизни с WHIEDA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vishzdorov.ru">
+  <title>Вишневское Здоровье — Wellness &amp; Долголетие</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80' fill='%23c9a961'>龍</text></svg>">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader" class="preloader">
+  <div class="preloader-content">
+    <div class="preloader-dragon">龍</div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="header" class="header">
+  <div class="container header-inner">
+    <a href="#hero" class="logo">
+      <span class="logo-monogram">ВЗ</span>
+      <span class="logo-text">Вишневское<br>Здоровье</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav-list">
+        <li><a href="#about"       class="nav-link">О себе</a></li>
+        <li><a href="#whieda"      class="nav-link">WHIEDA</a></li>
+        <li><a href="#products"    class="nav-link">Продукция</a></li>
+        <li><a href="#partnership" class="nav-link">Партнёрство</a></li>
+        <li><a href="#reviews"     class="nav-link">Отзывы</a></li>
+        <li><a href="#contacts"    class="nav-link">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <a href="#cta" class="btn btn-gold btn-header">Записаться</a>
+
+    <button class="burger" id="burger" aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE OVERLAY -->
+<div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
+  <button class="mobile-overlay-close" id="overlayClose" aria-label="Закрыть меню">✕</button>
+  <nav class="mobile-nav">
+    <ul>
+      <li><a href="#about"       class="mobile-nav-link">О себе</a></li>
+      <li><a href="#whieda"      class="mobile-nav-link">WHIEDA</a></li>
+      <li><a href="#products"    class="mobile-nav-link">Продукция</a></li>
+      <li><a href="#partnership" class="mobile-nav-link">Партнёрство</a></li>
+      <li><a href="#reviews"     class="mobile-nav-link">Отзывы</a></li>
+      <li><a href="#contacts"    class="mobile-nav-link">Контакты</a></li>
+    </ul>
+    <a href="#cta" class="btn btn-gold mobile-cta">Записаться на консультацию</a>
+  </nav>
+</div>
+
+<main>
+
+<!-- ═══════════════════════════════════════════
+     2. HERO
+═══════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <svg class="hero-dragon" id="heroDragon" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="#c9a961">
+        <!-- Body -->
+        <path d="M580,190 Q510,230 430,275 Q350,320 285,380 Q225,435 210,495" stroke="#c9a961" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M210,495 Q195,528 175,552 Q155,572 145,590" stroke="#c9a961" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <!-- Head -->
+        <ellipse cx="635" cy="170" rx="58" ry="42" opacity="0.9"/>
+        <path d="M662,140 L698,118 L682,144 Z"/>
+        <path d="M668,134 L708,108 L688,138 Z"/>
+        <circle cx="650" cy="158" r="6" fill="#1a3a2e"/>
+        <!-- Scales along body -->
+        <ellipse cx="530" cy="215" rx="18" ry="10" opacity="0.7"/>
+        <ellipse cx="475" cy="245" rx="16" ry="9" opacity="0.65"/>
+        <ellipse cx="415" cy="278" rx="15" ry="8" opacity="0.6"/>
+        <ellipse cx="358" cy="316" rx="14" ry="8" opacity="0.55"/>
+        <ellipse cx="305" cy="356" rx="12" ry="7" opacity="0.5"/>
+        <ellipse cx="258" cy="400" rx="11" ry="6" opacity="0.45"/>
+        <!-- Wings -->
+        <path d="M510,225 Q458,168 388,192 Q435,238 510,225 Z" opacity="0.7"/>
+        <path d="M528,238 Q592,182 650,208 Q602,252 528,238 Z" opacity="0.7"/>
+        <!-- Claws -->
+        <path d="M270,472 Q255,490 240,500 Q248,485 262,476 Z" opacity="0.8"/>
+        <path d="M278,465 Q260,488 248,502 Q258,482 272,468 Z" opacity="0.8"/>
+        <!-- Decorative swirls -->
+        <path d="M720,300 Q740,280 760,300 Q740,320 720,300 Z" opacity="0.4"/>
+        <path d="M100,420 Q85,400 100,385 Q115,400 100,420 Z" opacity="0.3"/>
+        <circle cx="760" cy="420" r="8" opacity="0.3"/>
+        <circle cx="755" cy="408" r="5" opacity="0.25"/>
+        <circle cx="770" cy="435" r="4" opacity="0.2"/>
+        <circle cx="120" cy="200" r="10" opacity="0.25"/>
+        <circle cx="115" cy="186" r="6" opacity="0.2"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <p  class="hero-eyebrow  reveal-item">WHIEDA · Wellness · Долголетие</p>
+      <h1 class="hero-title   reveal-item">Натуральное<br>оздоровление<br><em>и возможности<br>для новой жизни</em></h1>
+      <p  class="hero-subtitle reveal-item">Я помогаю людям укреплять здоровье с помощью современных wellness-решений и устроить доход в международном сообществе WHIEDA.</p>
+      <div class="hero-buttons reveal-item">
+        <a href="#cta"         class="btn btn-gold">Получить консультацию</a>
+        <a href="#partnership" class="btn btn-outline">Узнать о партнёрстве</a>
+      </div>
+      <p class="hero-meta reveal-item">3+ года опыта &nbsp;·&nbsp; 9 месяцев в WHIEDA &nbsp;·&nbsp; СПб</p>
+    </div>
+
+    <div class="hero-photo reveal-item">
+      <div class="hero-photo-frame">
+        <div class="image-placeholder hero-photo-inner" data-type="portrait">
+          <!--
+            PLACEHOLDER
+            Назначение: портретное фото
+            Размер: 480×640 px  |  Соотношение: 3:4
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <div class="scroll-dot"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     3. О СЕБЕ
+═══════════════════════════════════════════ -->
+<section class="section about-section" id="about">
+  <div class="container">
+    <header class="section-header">
+      <p class="section-eyebrow">Обо мне</p>
+      <h2 class="section-title">Почему люди выбирают меня</h2>
+    </header>
+
+    <div class="grid grid-3">
+      <div class="card glass-card reveal-item">
+        <div class="card-icon-wrap"><span class="card-icon">🎯</span></div>
+        <h3 class="card-title">3+ года в сетевом бизнесе</h3>
+        <p class="card-text">Понимаю, как устроить системно и без выгорания.</p>
+      </div>
+      <div class="card glass-card reveal-item">
+        <div class="card-icon-wrap"><span class="card-icon">🌿</span></div>
+        <h3 class="card-title">9 месяцев с WHIEDA</h3>
+        <p class="card-text">Активная экспертиза в актуальной wellness-системе.</p>
+      </div>
+      <div class="card glass-card reveal-item">
+        <div class="card-icon-wrap"><span class="card-icon">💎</span></div>
+        <h3 class="card-title">Личный опыт продукции</h3>
+        <p class="card-text">Использую всё, что рекомендую.</p>
+      </div>
+      <div class="card glass-card reveal-item">
+        <div class="card-icon-wrap"><span class="card-icon">🤝</span></div>
+        <h3 class="card-title">Сопровождение</h3>
+        <p class="card-text">Веду каждого клиента и партнёра лично.</p>
+      </div>
+      <div class="card glass-card reveal-item">
+        <div class="card-icon-wrap"><span class="card-icon">📱</span></div>
+        <h3 class="card-title">Поддержка 24/7</h3>
+        <p class="card-text">Всегда на связи в Telegram и WhatsApp.</p>
+      </div>
+      <div class="card glass-card reveal-item">
+        <div class="card-icon-wrap"><span class="card-icon">✨</span></div>
+        <h3 class="card-title">Индивидуальный подход</h3>
+        <p class="card-text">Программа подбирается под ваши задачи.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     4. WHIEDA
+═══════════════════════════════════════════ -->
+<section class="section whieda-section" id="whieda">
+  <div class="whieda-deco" aria-hidden="true"></div>
+  <div class="container">
+    <header class="section-header section-header-light">
+      <p class="section-eyebrow eyebrow-gold">О компании</p>
+      <h2 class="section-title title-light">Международная ассоциация<br>здоровья и долголетия</h2>
+    </header>
+
+    <div class="whieda-grid">
+      <div class="card whieda-card reveal-item">
+        <div class="whieda-icon">🏮</div>
+        <h3>Китайское происхождение</h3>
+        <p>Корни в традиционной медицине + современная наука.</p>
+      </div>
+      <div class="card whieda-card reveal-item">
+        <div class="whieda-icon">🌐</div>
+        <h3>«Один пояс — один путь»</h3>
+        <p>Официально включена в международную инициативу.</p>
+      </div>
+      <div class="card whieda-card reveal-item">
+        <div class="whieda-icon">🍃</div>
+        <h3>Wellness и профилактика</h3>
+        <p>Фокус на здоровье до болезни, а не после.</p>
+      </div>
+      <div class="card whieda-card reveal-item">
+        <div class="whieda-icon">⚗️</div>
+        <h3>Инновационные технологии</h3>
+        <p>Фотон, ферментация, биорезонанс, пептиды.</p>
+      </div>
+      <div class="card whieda-card reveal-item">
+        <div class="whieda-icon">🌍</div>
+        <h3>Международное сообщество</h3>
+        <p>Десятки стран, единая платформа развития.</p>
+      </div>
+    </div>
+
+    <blockquote class="whieda-quote reveal-item">
+      <p>WHIEDA объединяет древнюю мудрость Востока с передовыми технологиями, создавая новый стандарт заботы о здоровье для людей по всему миру.</p>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     5. ПРОДУКЦИЯ
+═══════════════════════════════════════════ -->
+<section class="section products-section" id="products">
+  <div class="container">
+    <header class="section-header">
+      <p class="section-eyebrow">Продукция WHIEDA</p>
+      <h2 class="section-title">Технологии здоровья нового поколения</h2>
+    </header>
+
+    <div class="products-filters reveal-item" role="tablist" aria-label="Фильтр продукции">
+      <button class="filter-btn active" data-filter="all"      role="tab">Все</button>
+      <button class="filter-btn"        data-filter="physio"   role="tab">Физиотерапия</button>
+      <button class="filter-btn"        data-filter="adaptive" role="tab">Адаптивные</button>
+      <button class="filter-btn"        data-filter="elixir"   role="tab">Эликсиры</button>
+      <button class="filter-btn"        data-filter="textile"  role="tab">Текстиль</button>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+
+      <article class="card product-card reveal-item" data-category="physio">
+        <div class="image-placeholder product-image"><span class="cat-icon">⚡</span></div>
+        <div class="product-body">
+          <span class="product-cat">Физиотерапия</span>
+          <h3 class="product-title">Активатор клеток</h3>
+          <p class="product-desc">Стимулирует регенерацию и метаболизм на клеточном уровне.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+      <article class="card product-card reveal-item" data-category="physio">
+        <div class="image-placeholder product-image"><span class="cat-icon">🌀</span></div>
+        <div class="product-body">
+          <span class="product-cat">Физиотерапия</span>
+          <h3 class="product-title">Фунтун</h3>
+          <p class="product-desc">Глубокий прогрев и улучшение микроциркуляции.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+      <article class="card product-card reveal-item" data-category="physio">
+        <div class="image-placeholder product-image"><span class="cat-icon">💫</span></div>
+        <div class="product-body">
+          <span class="product-cat">Физиотерапия</span>
+          <h3 class="product-title">МЭД</h3>
+          <p class="product-desc">Магнитно-электродинамическое воздействие для оздоровления.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+      <article class="card product-card reveal-item" data-category="physio">
+        <div class="image-placeholder product-image"><span class="cat-icon">🔥</span></div>
+        <div class="product-body">
+          <span class="product-cat">Физиотерапия</span>
+          <h3 class="product-title">Сауна ИК-ФИД</h3>
+          <p class="product-desc">Инфракрасная сауна с фотонно-ионным дренажем.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+      <article class="card product-card reveal-item" data-category="adaptive">
+        <div class="image-placeholder product-image"><span class="cat-icon">🎯</span></div>
+        <div class="product-body">
+          <span class="product-cat">Адаптивные товары</span>
+          <h3 class="product-title">Стрелки</h3>
+          <p class="product-desc">Корригирующие изделия с биоактивными элементами.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+      <article class="card product-card reveal-item" data-category="adaptive">
+        <div class="image-placeholder product-image"><span class="cat-icon">👓</span></div>
+        <div class="product-body">
+          <span class="product-cat">Адаптивные товары</span>
+          <h3 class="product-title">Фрагоновые очки</h3>
+          <p class="product-desc">Защита зрения с фрагоновым покрытием нового поколения.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+      <article class="card product-card reveal-item" data-category="adaptive">
+        <div class="image-placeholder product-image"><span class="cat-icon">🌸</span></div>
+        <div class="product-body">
+          <span class="product-cat">Адаптивные товары</span>
+          <h3 class="product-title">Прокладки с анионами</h3>
+          <p class="product-desc">Гигиенические изделия с анионовым слоем для женского здоровья.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+      <article class="card product-card reveal-item" data-category="elixir">
+        <div class="image-placeholder product-image"><span class="cat-icon">🌿</span></div>
+        <div class="product-body">
+          <span class="product-cat">Эликсиры и питание</span>
+          <h3 class="product-title">Кордицепт</h3>
+          <p class="product-desc">Адаптоген на основе кордицепса для энергии и иммунитета.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+      <article class="card product-card reveal-item" data-category="elixir">
+        <div class="image-placeholder product-image"><span class="cat-icon">✨</span></div>
+        <div class="product-body">
+          <span class="product-cat">Эликсиры и питание</span>
+          <h3 class="product-title">Коллаген</h3>
+          <p class="product-desc">Морской коллаген для молодости кожи и суставов.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+      <article class="card product-card reveal-item" data-category="elixir">
+        <div class="image-placeholder product-image"><span class="cat-icon">🔬</span></div>
+        <div class="product-body">
+          <span class="product-cat">Эликсиры и питание</span>
+          <h3 class="product-title">Пептид</h3>
+          <p class="product-desc">Биоактивные пептиды для клеточного омоложения.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+      <article class="card product-card reveal-item" data-category="elixir">
+        <div class="image-placeholder product-image"><span class="cat-icon">💪</span></div>
+        <div class="product-body">
+          <span class="product-cat">Эликсиры и питание</span>
+          <h3 class="product-title">Протеин</h3>
+          <p class="product-desc">Натуральный протеин для поддержания мышечной массы.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+      <article class="card product-card reveal-item" data-category="textile">
+        <div class="image-placeholder product-image"><span class="cat-icon">🌙</span></div>
+        <div class="product-body">
+          <span class="product-cat">Текстиль</span>
+          <h3 class="product-title">Система сна</h3>
+          <p class="product-desc">Умный текстиль с биоактивными волокнами для качественного сна.</p>
+          <a href="#" class="btn-product" data-contact="telegram">Узнать подробнее →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     6. КОМ ЭТО ПОДХОДИТ
+═══════════════════════════════════════════ -->
+<section class="section audience-section" id="audience">
+  <div class="container">
+    <header class="section-header">
+      <p class="section-eyebrow">Это для вас, если...</p>
+      <h2 class="section-title">Кому подходит</h2>
+    </header>
+
+    <div class="audience-grid">
+      <div class="audience-card reveal-item">
+        <div class="audience-icon-circle"><span>👥</span></div>
+        <p>Людям 40+</p>
+      </div>
+      <div class="audience-card reveal-item">
+        <div class="audience-icon-circle"><span>💼</span></div>
+        <p>Предпринимателям</p>
+      </div>
+      <div class="audience-card reveal-item">
+        <div class="audience-icon-circle"><span>👶</span></div>
+        <p>Мамам в декрете</p>
+      </div>
+      <div class="audience-card reveal-item">
+        <div class="audience-icon-circle"><span>💆</span></div>
+        <p>Массажистам</p>
+      </div>
+      <div class="audience-card reveal-item">
+        <div class="audience-icon-circle"><span>🥗</span></div>
+        <p>Нутрициологам</p>
+      </div>
+      <div class="audience-card reveal-item">
+        <div class="audience-icon-circle"><span>🌿</span></div>
+        <p>Пенсионерам</p>
+      </div>
+      <div class="audience-card reveal-item">
+        <div class="audience-icon-circle"><span>😴</span></div>
+        <p>При хронической<br>усталости</p>
+      </div>
+      <div class="audience-card reveal-item">
+        <div class="audience-icon-circle"><span>💰</span></div>
+        <p>Ищущим<br>доп. доход</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     7. ПАРТНЁРСТВО
+═══════════════════════════════════════════ -->
+<section class="section partnership-section" id="partnership">
+  <div class="container">
+    <div class="partnership-inner">
+      <div class="partnership-media reveal-item">
+        <div class="image-placeholder partnership-placeholder" data-type="team">
+          <!--
+            PLACEHOLDER
+            Назначение: фото команды или видео-обращение
+            Размер: 600×500 px  |  Соотношение: 6:5
+          -->
+        </div>
+      </div>
+
+      <div class="partnership-content">
+        <p class="section-eyebrow">Партнёрство</p>
+        <h2 class="section-title">Возможность построить своё дело в сфере wellness</h2>
+
+        <ul class="partnership-list">
+          <li class="partnership-item reveal-item">
+            <span class="pi-icon">💻</span>
+            <div><strong>Работа онлайн</strong><span>из любой точки мира</span></div>
+          </li>
+          <li class="partnership-item reveal-item">
+            <span class="pi-icon">📚</span>
+            <div><strong>Полное обучение</strong><span>система готовых инструментов</span></div>
+          </li>
+          <li class="partnership-item reveal-item">
+            <span class="pi-icon">🤝</span>
+            <div><strong>Личная поддержка</strong><span>наставник на всех этапах</span></div>
+          </li>
+          <li class="partnership-item reveal-item">
+            <span class="pi-icon">🌍</span>
+            <div><strong>Международное сообщество</strong><span>выход на десятки стран</span></div>
+          </li>
+          <li class="partnership-item reveal-item">
+            <span class="pi-icon">📅</span>
+            <div><strong>Свободный график</strong><span>вы управляете своим временем</span></div>
+          </li>
+          <li class="partnership-item reveal-item">
+            <span class="pi-icon">🏡</span>
+            <div><strong>Доход без офиса</strong><span>заработок на образе жизни</span></div>
+          </li>
+        </ul>
+
+        <a href="#" class="btn btn-gold" data-contact="telegram">Стать партнёром</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     8. ФОРМАТЫ СОТРУДНИЧЕСТВА
+═══════════════════════════════════════════ -->
+<section class="section formats-section" id="formats">
+  <div class="container">
+    <header class="section-header">
+      <p class="section-eyebrow">Форматы сотрудничества</p>
+      <h2 class="section-title">Как мы можем поработать</h2>
+    </header>
+
+    <div class="formats-grid">
+      <div class="format-card reveal-item">
+        <div class="format-num">01</div>
+        <div class="format-icon">💬</div>
+        <h3>Онлайн-консультация</h3>
+        <p>Zoom / Telegram, 60 минут</p>
+        <a href="#" class="btn btn-gold btn-sm" data-contact="telegram">Записаться</a>
+      </div>
+      <div class="format-card reveal-item">
+        <div class="format-num">02</div>
+        <div class="format-icon">🏢</div>
+        <h3>Встреча в офисе СПб</h3>
+        <p>Лично, с диагностикой</p>
+        <a href="#" class="btn btn-gold btn-sm" data-contact="telegram">Записаться</a>
+      </div>
+      <div class="format-card reveal-item">
+        <div class="format-num">03</div>
+        <div class="format-icon">🔍</div>
+        <h3>Тестирование продукции</h3>
+        <p>Попробовать перед покупкой</p>
+        <a href="#" class="btn btn-gold btn-sm" data-contact="telegram">Записаться</a>
+      </div>
+      <div class="format-card reveal-item">
+        <div class="format-num">04</div>
+        <div class="format-icon">⚡</div>
+        <h3>Массаж МЭД</h3>
+        <p>Сессия на аппарате</p>
+        <a href="#" class="btn btn-gold btn-sm" data-contact="telegram">Записаться</a>
+      </div>
+      <div class="format-card reveal-item">
+        <div class="format-num">05</div>
+        <div class="format-icon">🎯</div>
+        <h3>Подбор программы</h3>
+        <p>Индивидуальный план под цели</p>
+        <a href="#" class="btn btn-gold btn-sm" data-contact="telegram">Записаться</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     9. ОТЗЫВЫ
+═══════════════════════════════════════════ -->
+<section class="section reviews-section" id="reviews">
+  <div class="container">
+    <header class="section-header">
+      <p class="section-eyebrow">Отзывы</p>
+      <h2 class="section-title">Что говорят клиенты</h2>
+    </header>
+
+    <div class="slider-wrapper reveal-item">
+      <div class="slider-track" id="sliderTrack">
+
+        <div class="review-card">
+          <div class="review-avatar">
+            <div class="image-placeholder avatar-placeholder" data-type="avatar"><!--80×80--></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">«Начала принимать Кордицепт два месяца назад — уровень энергии значительно вырос. Татьяна очень подробно всё объяснила и сопровождает на каждом шагу.»</p>
+          <span class="review-author">Елена, 45 лет</span>
+          <span class="review-source">Telegram</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-avatar">
+            <div class="image-placeholder avatar-placeholder" data-type="avatar"><!--80×80--></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">«Приобрела Активатор клеток после консультации. Сустав перестал болеть уже через три недели. Очень благодарна за профессиональный подход!»</p>
+          <span class="review-author">Наталья, 52 года</span>
+          <span class="review-source">Личная встреча</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-avatar">
+            <div class="image-placeholder avatar-placeholder" data-type="avatar"><!--80×80--></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">«Давно искала дополнительный доход, который не противоречит моим ценностям. Татьяна помогла разобраться в системе WHIEDA — теперь я сама помогаю другим.»</p>
+          <span class="review-author">Марина, 38 лет</span>
+          <span class="review-source">Telegram</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-avatar">
+            <div class="image-placeholder avatar-placeholder" data-type="avatar"><!--80×80--></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">«Как нутрициолог я скептически отнеслась сначала, но продукция реально работает. Рекомендую клиентам и сотрудничаю с Татьяной уже 6 месяцев.»</p>
+          <span class="review-author">Ирина, 41 год</span>
+          <span class="review-source">Личная встреча</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-avatar">
+            <div class="image-placeholder avatar-placeholder" data-type="avatar"><!--80×80--></div>
+          </div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">«Индивидуально подобрала программу под мои проблемы. Чувствую себя намного лучше, сон улучшился, хроническая усталость ушла.»</p>
+          <span class="review-author">Светлана, 48 лет</span>
+          <span class="review-source">WhatsApp</span>
+        </div>
+
+      </div>
+
+      <div class="slider-nav">
+        <button class="slider-btn" id="sliderPrev" aria-label="Предыдущий">‹</button>
+        <div class="slider-dots" id="sliderDots" role="tablist"></div>
+        <button class="slider-btn" id="sliderNext" aria-label="Следующий">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     10. CTA
+═══════════════════════════════════════════ -->
+<section class="section cta-section" id="cta">
+  <div class="cta-bg" aria-hidden="true">
+    <svg class="cta-dragon" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg" id="ctaDragon">
+      <g fill="#c9a961" opacity="0.12">
+        <path d="M580,190 Q510,230 430,275 Q350,320 285,380 Q225,435 210,495" stroke="#c9a961" stroke-width="18" fill="none" stroke-linecap="round"/>
+        <ellipse cx="635" cy="170" rx="58" ry="42"/>
+        <path d="M510,225 Q458,168 388,192 Q435,238 510,225 Z"/>
+        <path d="M528,238 Q592,182 650,208 Q602,252 528,238 Z"/>
+      </g>
+    </svg>
+    <div class="cta-glow"></div>
+  </div>
+
+  <div class="container cta-inner">
+    <h2 class="cta-title reveal-item">Начните путь к здоровью<br>и новым возможностям<br><em>уже сегодня</em></h2>
+    <p class="cta-subtitle reveal-item">Напишите мне в любом удобном мессенджере — отвечу лично в течение часа.</p>
+
+    <div class="cta-buttons reveal-item">
+      <a href="#" class="btn btn-cta-tg" data-contact="telegram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        Telegram
+      </a>
+      <a href="#" class="btn btn-cta-outline" data-contact="whatsapp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <a href="#" class="btn btn-cta-outline" data-contact="vk">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.523-2.049-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.408 4 7.932c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.27-1.422 2.17-3.607 2.17-3.607.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.202 1.253.745.847 1.32 1.558 1.473 2.049.17.474-.085.711-.576.711z"/></svg>
+        VK
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════
+     11. FOOTER
+═══════════════════════════════════════════ -->
+<footer class="footer" id="contacts">
+  <div class="container footer-inner">
+
+    <div class="footer-col footer-brand">
+      <div class="footer-logo">
+        <span class="logo-monogram">ВЗ</span>
+        <span class="logo-text">Вишневское<br>Здоровье</span>
+      </div>
+      <p class="footer-slogan">Путь к здоровью и свободе</p>
+      <p class="footer-desc">Персональный wellness-бренд. Натуральное оздоровление и возможности для роста с WHIEDA.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-col-title">Навигация</h4>
+      <ul class="footer-links">
+        <li><a href="#about">О себе</a></li>
+        <li><a href="#whieda">WHIEDA</a></li>
+        <li><a href="#products">Продукция</a></li>
+        <li><a href="#partnership">Партнёрство</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4 class="footer-col-title">Контакты</h4>
+      <ul class="footer-contacts">
+        <li><span>📞</span><a href="#" data-contact="phone">+7 XXX XXX XX XX</a></li>
+        <li><span>✈️</span><a href="#" data-contact="telegram">Telegram</a></li>
+        <li><span>💬</span><a href="#" data-contact="whatsapp">WhatsApp</a></li>
+        <li><span>🔵</span><a href="#" data-contact="vk">VK</a></li>
+        <li><span>📸</span><a href="#" data-contact="instagram">Instagram</a></li>
+        <li><span>✉️</span><a href="#" data-contact="email">hello@vishzdorov.ru</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Вишневское Здоровье · VishZdorov.ru</p>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Наверх" hidden>↑</button>
+
+<script src="js/config.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
